@@ -1,0 +1,129 @@
+CRITICAL - 2023-03-16 14:18:40 --> App\Controllers\BaseController::getRequestInput(): Argument #1 ($request) must be of type CodeIgniter\HTTP\IncomingRequest, null given, called in C:\xampp\htdocs\ci\app\Controllers\api\Auth.php on line 68
+in APPPATH\Controllers\BaseController.php on line 70.
+ 1 APPPATH\Controllers\api\Auth.php(68): App\Controllers\BaseController->getRequestInput(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\api\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-16 14:32:21 --> CodeIgniter\Validation\Validation::run(): Argument #1 ($data) must be of type ?array, stdClass given, called in C:\xampp\htdocs\ci\app\Controllers\BaseController.php on line 99
+in SYSTEMPATH\Validation\Validation.php on line 110.
+ 1 APPPATH\Controllers\BaseController.php(99): CodeIgniter\Validation\Validation->run(Object(stdClass))
+ 2 APPPATH\Controllers\api\Auth.php(71): App\Controllers\BaseController->validateRequest(Object(stdClass), [...], [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\api\Auth->login()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\Auth))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-16 15:15:45 --> Undefined property: App\Controllers\api\Auth::$input
+in APPPATH\Controllers\api\Auth.php on line 57.
+ 1 APPPATH\Controllers\api\Auth.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\api\\Auth::$input', 'APPPATH\\Controllers\\api\\Auth.php', 57)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\api\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-16 15:16:11 --> App\Controllers\BaseController::getResponse(): Argument #1 ($responseBody) must be of type array, CodeIgniter\HTTP\IncomingRequest given, called in C:\xampp\htdocs\ci\app\Controllers\api\Auth.php on line 57
+in APPPATH\Controllers\BaseController.php on line 62.
+ 1 APPPATH\Controllers\api\Auth.php(57): App\Controllers\BaseController->getResponse(Object(CodeIgniter\HTTP\IncomingRequest), 400)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\api\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-16 15:18:31 --> Cannot access protected property CodeIgniter\HTTP\IncomingRequest::$body
+in APPPATH\Controllers\api\Auth.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\api\Auth->login()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\Auth))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-16 15:18:59 --> Call to undefined method App\Controllers\api\Auth::setJson()
+in APPPATH\Controllers\api\Auth.php on line 59.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\api\Auth->login()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\Auth))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-16 15:19:25 --> Call to undefined method App\Controllers\api\Auth::setJSON()
+in APPPATH\Controllers\api\Auth.php on line 59.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\api\Auth->login()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\Auth))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-16 15:20:19 --> CodeIgniter\Validation\Validation::run(): Argument #1 ($data) must be of type ?array, stdClass given, called in C:\xampp\htdocs\ci\app\Controllers\BaseController.php on line 99
+in SYSTEMPATH\Validation\Validation.php on line 110.
+ 1 APPPATH\Controllers\BaseController.php(99): CodeIgniter\Validation\Validation->run(Object(stdClass))
+ 2 APPPATH\Controllers\api\Auth.php(72): App\Controllers\BaseController->validateRequest(Object(stdClass), [...], [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\api\Auth->login()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\Auth))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-16 15:21:21 --> CodeIgniter\Validation\Validation::run(): Argument #1 ($data) must be of type ?array, stdClass given, called in C:\xampp\htdocs\ci\app\Controllers\BaseController.php on line 99
+in SYSTEMPATH\Validation\Validation.php on line 110.
+ 1 APPPATH\Controllers\BaseController.php(99): CodeIgniter\Validation\Validation->run(Object(stdClass))
+ 2 APPPATH\Controllers\api\Auth.php(72): App\Controllers\BaseController->validateRequest(Object(stdClass), [...], [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\api\Auth->login()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\Auth))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-16 15:38:59 --> Undefined variable $request
+in APPPATH\Controllers\api\Auth.php on line 69.
+ 1 APPPATH\Controllers\api\Auth.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request', 'APPPATH\\Controllers\\api\\Auth.php', 69)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\api\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-16 15:39:01 --> Undefined variable $request
+in APPPATH\Controllers\api\Auth.php on line 69.
+ 1 APPPATH\Controllers\api\Auth.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request', 'APPPATH\\Controllers\\api\\Auth.php', 69)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\api\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-16 15:39:11 --> Undefined variable $request
+in APPPATH\Controllers\api\Auth.php on line 69.
+ 1 APPPATH\Controllers\api\Auth.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request', 'APPPATH\\Controllers\\api\\Auth.php', 69)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\api\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-16 15:39:19 --> Undefined variable $request
+in APPPATH\Controllers\api\Auth.php on line 69.
+ 1 APPPATH\Controllers\api\Auth.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request', 'APPPATH\\Controllers\\api\\Auth.php', 69)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\api\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-16 15:39:48 --> Undefined variable $request
+in APPPATH\Controllers\api\Auth.php on line 69.
+ 1 APPPATH\Controllers\api\Auth.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request', 'APPPATH\\Controllers\\api\\Auth.php', 69)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\api\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-16 17:41:38 --> Too few arguments to function App\Controllers\api\Email::index(), 0 passed in C:\xampp\htdocs\ci\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\api\Email.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\api\Email->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\Email))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-16 17:41:52 --> Too few arguments to function App\Controllers\api\Email::index(), 0 passed in C:\xampp\htdocs\ci\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\api\Email.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\api\Email->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\Email))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-16 17:46:11 --> Too few arguments to function App\Controllers\api\Email::index(), 0 passed in C:\xampp\htdocs\ci\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\api\Email.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\api\Email->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\Email))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-16 17:46:30 --> Too few arguments to function App\Controllers\api\Email::index(), 0 passed in C:\xampp\htdocs\ci\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\api\Email.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\api\Email->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\Email))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-16 17:48:06 --> no messages
+in APPPATH\Models\MsgModel.php on line 33.
+ 1 APPPATH\Controllers\api\Email.php(24): App\Models\MsgModel->indexMsg('$id')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\api\Email->index('$id')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\Email))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

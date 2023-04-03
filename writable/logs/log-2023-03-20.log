@@ -1,0 +1,50 @@
+WARNING - 2023-03-20 02:42:16 --> [DEPRECATED] json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in APPPATH\Filters\JWTAuthenticationFilter.php on line 18.
+ 1 APPPATH\Filters\JWTAuthenticationFilter.php(18): json_decode(null, true)
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\JWTAuthenticationFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('api/email/inbox/bb', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-03-20 02:43:55 --> [DEPRECATED] json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in APPPATH\Filters\JWTAuthenticationFilter.php on line 18.
+ 1 APPPATH\Filters\JWTAuthenticationFilter.php(18): json_decode(null, true)
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\JWTAuthenticationFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('api/email/inbox/bb', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-03-20 02:47:48 --> [DEPRECATED] json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in APPPATH\Filters\JWTAuthenticationFilter.php on line 18.
+ 1 APPPATH\Filters\JWTAuthenticationFilter.php(18): json_decode(null, true)
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\JWTAuthenticationFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('api/email/inbox/aa', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-03-20 02:47:49 --> [DEPRECATED] json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in APPPATH\Filters\JWTAuthenticationFilter.php on line 18.
+ 1 APPPATH\Filters\JWTAuthenticationFilter.php(18): json_decode(null, true)
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\JWTAuthenticationFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('api/email/inbox/aa', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-03-20 02:49:15 --> [DEPRECATED] json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in APPPATH\Filters\JWTAuthenticationFilter.php on line 18.
+ 1 APPPATH\Filters\JWTAuthenticationFilter.php(18): json_decode(null, true)
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\JWTAuthenticationFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('api/email/inbox/bb', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-03-20 02:52:15 --> [DEPRECATED] json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in APPPATH\Filters\JWTAuthenticationFilter.php on line 18.
+ 1 APPPATH\Filters\JWTAuthenticationFilter.php(18): json_decode(null, true)
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\JWTAuthenticationFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('api/email/inbox/aa', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-20 03:06:37 --> Undefined variable $id
+in APPPATH\Controllers\api\Email.php on line 36.
+ 1 APPPATH\Controllers\api\Email.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'APPPATH\\Controllers\\api\\Email.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\api\Email->inbox()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\Email))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-20 03:07:25 --> Undefined variable $id
+in APPPATH\Controllers\api\Email.php on line 36.
+ 1 APPPATH\Controllers\api\Email.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'APPPATH\\Controllers\\api\\Email.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\api\Email->inbox()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\Email))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

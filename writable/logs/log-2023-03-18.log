@@ -1,0 +1,79 @@
+CRITICAL - 2023-03-18 00:54:43 --> Too few arguments to function App\Controllers\api\Email::inbox(), 0 passed in C:\xampp\htdocs\ci\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\api\Email.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\api\Email->inbox()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\Email))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-18 02:05:19 --> Undefined array key "access_token"
+in APPPATH\Filters\JWTAuthenticationFilter.php on line 19.
+ 1 APPPATH\Filters\JWTAuthenticationFilter.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "access_token"', 'APPPATH\\Filters\\JWTAuthenticationFilter.php', 19)
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\JWTAuthenticationFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('api/email/inbox/bb', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-03-18 02:15:21 --> [DEPRECATED] json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in APPPATH\Filters\JWTAuthenticationFilter.php on line 18.
+ 1 APPPATH\Filters\JWTAuthenticationFilter.php(18): json_decode(null, true)
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\JWTAuthenticationFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('api/email/inbox/bb', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-03-18 02:17:02 --> [DEPRECATED] json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in APPPATH\Filters\JWTAuthenticationFilter.php on line 18.
+ 1 APPPATH\Filters\JWTAuthenticationFilter.php(18): json_decode(null, true)
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\JWTAuthenticationFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('api/email/inbox/bb', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-03-18 02:21:05 --> [DEPRECATED] json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in APPPATH\Filters\JWTAuthenticationFilter.php on line 18.
+ 1 APPPATH\Filters\JWTAuthenticationFilter.php(18): json_decode(null, true)
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\JWTAuthenticationFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('api/email/inbox/bb', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-03-18 02:24:59 --> [DEPRECATED] json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in APPPATH\Filters\JWTAuthenticationFilter.php on line 18.
+ 1 APPPATH\Filters\JWTAuthenticationFilter.php(18): json_decode(null, true)
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\JWTAuthenticationFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('api/email/inbox/bb', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-03-18 02:25:12 --> [DEPRECATED] json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in APPPATH\Filters\JWTAuthenticationFilter.php on line 18.
+ 1 APPPATH\Filters\JWTAuthenticationFilter.php(18): json_decode(null, true)
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\JWTAuthenticationFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('api/email/inbox/bb', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-03-18 02:31:04 --> [DEPRECATED] json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in APPPATH\Filters\JWTAuthenticationFilter.php on line 18.
+ 1 APPPATH\Filters\JWTAuthenticationFilter.php(18): json_decode(null, true)
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\JWTAuthenticationFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('api/email/inbox/bb', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-03-18 02:31:36 --> [DEPRECATED] json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in APPPATH\Filters\JWTAuthenticationFilter.php on line 18.
+ 1 APPPATH\Filters\JWTAuthenticationFilter.php(18): json_decode(null, true)
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\JWTAuthenticationFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('api/email/inbox/bb', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-03-18 02:31:47 --> [DEPRECATED] json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in APPPATH\Filters\JWTAuthenticationFilter.php on line 18.
+ 1 APPPATH\Filters\JWTAuthenticationFilter.php(18): json_decode(null, true)
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\JWTAuthenticationFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('api/email/inbox/bb', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-03-18 02:32:39 --> [DEPRECATED] json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in APPPATH\Filters\JWTAuthenticationFilter.php on line 18.
+ 1 APPPATH\Filters\JWTAuthenticationFilter.php(18): json_decode(null, true)
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\JWTAuthenticationFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('api/email/inbox/bb', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-03-18 02:33:23 --> [DEPRECATED] json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in APPPATH\Filters\JWTAuthenticationFilter.php on line 18.
+ 1 APPPATH\Filters\JWTAuthenticationFilter.php(18): json_decode(null, true)
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\JWTAuthenticationFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('api/email/inbox/bb', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-03-18 02:33:28 --> [DEPRECATED] json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in APPPATH\Filters\JWTAuthenticationFilter.php on line 18.
+ 1 APPPATH\Filters\JWTAuthenticationFilter.php(18): json_decode(null, true)
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\JWTAuthenticationFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('api/email/inbox/bb', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,59 @@
+CRITICAL - 2023-03-13 01:00:37 --> Too few arguments to function App\Controllers\api\Email::index(), 0 passed in C:\xampp\htdocs\ci\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\api\Email.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\api\Email->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\Email))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-13 01:04:19 --> no messages
+in APPPATH\Models\MsgModel.php on line 33.
+ 1 APPPATH\Controllers\api\Email.php(24): App\Models\MsgModel->indexMsg('dd')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\api\Email->index('dd')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\Email))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-13 01:05:16 --> no messages
+in APPPATH\Models\MsgModel.php on line 33.
+ 1 APPPATH\Controllers\api\Email.php(24): App\Models\MsgModel->indexMsg('aa')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\api\Email->index('aa')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\Email))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-13 04:24:37 --> Too few arguments to function Firebase\JWT\Key::__construct(), 1 passed in C:\xampp\htdocs\ci\app\Helpers\jwt_helper.php on line 20 and exactly 2 expected
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 21.
+ 1 APPPATH\Helpers\jwt_helper.php(20): Firebase\JWT\Key->__construct('kzUf4sxss4AeG5uHkNZAqT1Nyi1zVfpz')
+ 2 APPPATH\Filters\JWTAuthenticationFilter.php(24): validateJWTFromRequest('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImFhIiwiaWF0IjoxNjc4NjgwODI2LCJleHAiOjE2Nzg2ODQ0MjZ9.CWkHZWLJBH74kC4hLVKG8kEbAfHs0dvgILdt4GUQ4LE')
+ 3 SYSTEMPATH\Filters\Filters.php(173): App\Filters\JWTAuthenticationFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('api/email/aa', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-13 04:25:00 --> Firebase\JWT\Key::__construct(): Argument #2 ($algorithm) must be of type string, array given, called in C:\xampp\htdocs\ci\app\Helpers\jwt_helper.php on line 20
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 21.
+ 1 APPPATH\Helpers\jwt_helper.php(20): Firebase\JWT\Key->__construct('kzUf4sxss4AeG5uHkNZAqT1Nyi1zVfpz', [...])
+ 2 APPPATH\Filters\JWTAuthenticationFilter.php(24): validateJWTFromRequest('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImFhIiwiaWF0IjoxNjc4NjgwODI2LCJleHAiOjE2Nzg2ODQ0MjZ9.CWkHZWLJBH74kC4hLVKG8kEbAfHs0dvgILdt4GUQ4LE')
+ 3 SYSTEMPATH\Filters\Filters.php(173): App\Filters\JWTAuthenticationFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('api/email/aa', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-13 04:49:46 --> Firebase\JWT\Key::__construct(): Argument #2 ($algorithm) must be of type string, array given, called in C:\xampp\htdocs\ci\app\Helpers\jwt_helper.php on line 20
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 21.
+ 1 APPPATH\Helpers\jwt_helper.php(20): Firebase\JWT\Key->__construct('kzUf4sxss4AeG5uHkNZAqT1Nyi1zVfpz', [...])
+ 2 APPPATH\Filters\JWTAuthenticationFilter.php(24): validateJWTFromRequest('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImFhIiwiaWF0IjoxNjc4NjgwODI2LCJleHAiOjE2Nzg2ODQ0MjZ9.CWkHZWLJBH74kC4hLVKG8kEbAfHs0dvgILdt4GUQ4LE')
+ 3 SYSTEMPATH\Filters\Filters.php(173): App\Filters\JWTAuthenticationFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('api/email/aa', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-13 04:50:22 --> Firebase\JWT\Key::__construct(): Argument #2 ($algorithm) must be of type string, array given, called in C:\xampp\htdocs\ci\app\Helpers\jwt_helper.php on line 20
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 21.
+ 1 APPPATH\Helpers\jwt_helper.php(20): Firebase\JWT\Key->__construct('kzUf4sxss4AeG5uHkNZAqT1Nyi1zVfpz', [...])
+ 2 APPPATH\Filters\JWTAuthenticationFilter.php(24): validateJWTFromRequest('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImFhIiwiaWF0IjoxNjc4NjgwODI2LCJleHAiOjE2Nzg2ODQ0MjZ9.CWkHZWLJBH74kC4hLVKG8kEbAfHs0dvgILdt4GUQ4LE')
+ 3 SYSTEMPATH\Filters\Filters.php(173): App\Filters\JWTAuthenticationFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('api/email/aa', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-13 04:57:29 --> no messages
+in APPPATH\Models\MsgModel.php on line 33.
+ 1 APPPATH\Controllers\api\Email.php(24): App\Models\MsgModel->indexMsg('aa')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\api\Email->index('aa')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\Email))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

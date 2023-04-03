@@ -1,0 +1,16 @@
+CRITICAL - 2023-03-29 00:44:04 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Helpers\jwt_helper.php(20): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Filters\JWTAuthenticationFilter.php(26): validateJWTFromRequest('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImJiIiwiaWF0IjoxNjgwMDQ5MTI5LCJleHAiOjE2ODAwODUxMjl9.rHLezQ7wr4EcbDdnT-p9GFori0T_Ii5-EHIiTd2Ebpw')
+ 3 SYSTEMPATH\Filters\Filters.php(173): App\Filters\JWTAuthenticationFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('api/email', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 01:52:48 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Helpers\jwt_helper.php(20): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Filters\JWTAuthenticationFilter.php(26): validateJWTFromRequest('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImJiIiwiaWF0IjoxNjgwMDQ5MTI5LCJleHAiOjE2ODAwODUxMjl9.rHLezQ7wr4EcbDdnT-p9GFori0T_Ii5-EHIiTd2Ebpw')
+ 3 SYSTEMPATH\Filters\Filters.php(173): App\Filters\JWTAuthenticationFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('api/email/single', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

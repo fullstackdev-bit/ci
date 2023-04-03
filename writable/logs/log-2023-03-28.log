@@ -1,0 +1,8 @@
+CRITICAL - 2023-03-28 17:29:04 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Helpers\jwt_helper.php(20): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Filters\JWTAuthenticationFilter.php(26): validateJWTFromRequest('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImJiIiwiaWF0IjoxNjgwMDIyOTA2LCJleHAiOjE2ODAwNTg5MDZ9.nyZYl0KE4Oa711S7ISfej-pum3b6Dyud9_4s85PMW6s')
+ 3 SYSTEMPATH\Filters\Filters.php(173): App\Filters\JWTAuthenticationFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('api/email/sent', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

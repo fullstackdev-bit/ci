@@ -1,0 +1,48 @@
+WARNING - 2023-03-27 02:20:15 --> [DEPRECATED] Invalid characters passed for attempted conversion, these have been ignored in APPPATH\Controllers\api\Email.php on line 161.
+ 1 APPPATH\Controllers\api\Email.php(161): hexdec('NaN')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\api\Email->updateState()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\Email))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-03-27 02:20:22 --> [DEPRECATED] Invalid characters passed for attempted conversion, these have been ignored in APPPATH\Controllers\api\Email.php on line 161.
+ 1 APPPATH\Controllers\api\Email.php(161): hexdec('NaN')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\api\Email->updateState()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\Email))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-03-27 02:20:37 --> [DEPRECATED] Invalid characters passed for attempted conversion, these have been ignored in APPPATH\Controllers\api\Email.php on line 161.
+ 1 APPPATH\Controllers\api\Email.php(161): hexdec('NaN')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\api\Email->updateState()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\Email))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-03-27 02:20:40 --> [DEPRECATED] Invalid characters passed for attempted conversion, these have been ignored in APPPATH\Controllers\api\Email.php on line 161.
+ 1 APPPATH\Controllers\api\Email.php(161): hexdec('NaN')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\api\Email->updateState()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\Email))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-03-27 02:21:51 --> [DEPRECATED] Invalid characters passed for attempted conversion, these have been ignored in APPPATH\Controllers\api\Email.php on line 161.
+ 1 APPPATH\Controllers\api\Email.php(161): hexdec('NaN')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\api\Email->updateState()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\Email))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-03-27 02:22:31 --> [DEPRECATED] Invalid characters passed for attempted conversion, these have been ignored in APPPATH\Controllers\api\Email.php on line 161.
+ 1 APPPATH\Controllers\api\Email.php(161): hexdec('NaN')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\api\Email->updateState()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\Email))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-03-27 02:22:45 --> [DEPRECATED] Invalid characters passed for attempted conversion, these have been ignored in APPPATH\Controllers\api\Email.php on line 161.
+ 1 APPPATH\Controllers\api\Email.php(161): hexdec('NaN')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\api\Email->updateState()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\Email))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-03-27 02:22:49 --> [DEPRECATED] Invalid characters passed for attempted conversion, these have been ignored in APPPATH\Controllers\api\Email.php on line 161.
+ 1 APPPATH\Controllers\api\Email.php(161): hexdec('NaN')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\api\Email->updateState()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\Email))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

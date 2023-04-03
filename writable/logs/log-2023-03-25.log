@@ -1,0 +1,290 @@
+ERROR - 2023-03-25 00:25:11 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\ci\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\ci\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'custom_email', 3306, '', 0)
+#1 C:\xampp\htdocs\ci\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ci\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ci\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ci\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ci\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\ci\app\Models\UserModel.php(44): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\ci\app\Validation\UserRules.php(14): App\Models\UserModel->findUserByUsername('bb')
+#8 C:\xampp\htdocs\ci\system\Validation\Validation.php(312): App\Validation\UserRules->validateUser('123', 'username, passw...', Array, NULL, 'password')
+#9 C:\xampp\htdocs\ci\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('password', 'password', '123', Array, Array)
+#10 C:\xampp\htdocs\ci\app\Controllers\BaseController.php(99): CodeIgniter\Validation\Validation->run(Array)
+#11 C:\xampp\htdocs\ci\app\Controllers\api\Auth.php(71): App\Controllers\BaseController->validateRequest(Array, Array, Array)
+#12 C:\xampp\htdocs\ci\system\CodeIgniter.php(934): App\Controllers\api\Auth->login()
+#13 C:\xampp\htdocs\ci\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\Auth))
+#14 C:\xampp\htdocs\ci\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 C:\xampp\htdocs\ci\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#16 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\ci\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\ci\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ci\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ci\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\ci\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\ci\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\ci\app\Models\UserModel.php(44): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\ci\app\Validation\UserRules.php(14): App\Models\UserModel->findUserByUsername('bb')
+#7 C:\xampp\htdocs\ci\system\Validation\Validation.php(312): App\Validation\UserRules->validateUser('123', 'username, passw...', Array, NULL, 'password')
+#8 C:\xampp\htdocs\ci\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('password', 'password', '123', Array, Array)
+#9 C:\xampp\htdocs\ci\app\Controllers\BaseController.php(99): CodeIgniter\Validation\Validation->run(Array)
+#10 C:\xampp\htdocs\ci\app\Controllers\api\Auth.php(71): App\Controllers\BaseController->validateRequest(Array, Array, Array)
+#11 C:\xampp\htdocs\ci\system\CodeIgniter.php(934): App\Controllers\api\Auth->login()
+#12 C:\xampp\htdocs\ci\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\Auth))
+#13 C:\xampp\htdocs\ci\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 C:\xampp\htdocs\ci\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#15 {main}
+CRITICAL - 2023-03-25 00:25:11 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\UserModel.php(44): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Validation\UserRules.php(14): App\Models\UserModel->findUserByUsername('bb')
+ 7 SYSTEMPATH\Validation\Validation.php(312): App\Validation\UserRules->validateUser('123', 'username, password', [...], null, 'password')
+ 8 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('password', 'password', '123', [...], [...])
+ 9 APPPATH\Controllers\BaseController.php(99): CodeIgniter\Validation\Validation->run([...])
+10 APPPATH\Controllers\api\Auth.php(71): App\Controllers\BaseController->validateRequest([...], [...], [...])
+11 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\api\Auth->login()
+12 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\Auth))
+13 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-25 00:25:42 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\ci\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\ci\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'custom_email', 3306, '', 0)
+#1 C:\xampp\htdocs\ci\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ci\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ci\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ci\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ci\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\ci\app\Models\UserModel.php(44): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\ci\app\Validation\UserRules.php(14): App\Models\UserModel->findUserByUsername('aaa')
+#8 C:\xampp\htdocs\ci\system\Validation\Validation.php(312): App\Validation\UserRules->validateUser('123', 'username, passw...', Array, NULL, 'password')
+#9 C:\xampp\htdocs\ci\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('password', 'password', '123', Array, Array)
+#10 C:\xampp\htdocs\ci\app\Controllers\BaseController.php(99): CodeIgniter\Validation\Validation->run(Array)
+#11 C:\xampp\htdocs\ci\app\Controllers\api\Auth.php(71): App\Controllers\BaseController->validateRequest(Array, Array, Array)
+#12 C:\xampp\htdocs\ci\system\CodeIgniter.php(934): App\Controllers\api\Auth->login()
+#13 C:\xampp\htdocs\ci\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\Auth))
+#14 C:\xampp\htdocs\ci\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 C:\xampp\htdocs\ci\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#16 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\ci\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\ci\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ci\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ci\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\ci\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\ci\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\ci\app\Models\UserModel.php(44): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\ci\app\Validation\UserRules.php(14): App\Models\UserModel->findUserByUsername('aaa')
+#7 C:\xampp\htdocs\ci\system\Validation\Validation.php(312): App\Validation\UserRules->validateUser('123', 'username, passw...', Array, NULL, 'password')
+#8 C:\xampp\htdocs\ci\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('password', 'password', '123', Array, Array)
+#9 C:\xampp\htdocs\ci\app\Controllers\BaseController.php(99): CodeIgniter\Validation\Validation->run(Array)
+#10 C:\xampp\htdocs\ci\app\Controllers\api\Auth.php(71): App\Controllers\BaseController->validateRequest(Array, Array, Array)
+#11 C:\xampp\htdocs\ci\system\CodeIgniter.php(934): App\Controllers\api\Auth->login()
+#12 C:\xampp\htdocs\ci\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\Auth))
+#13 C:\xampp\htdocs\ci\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 C:\xampp\htdocs\ci\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#15 {main}
+CRITICAL - 2023-03-25 00:25:42 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\UserModel.php(44): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Validation\UserRules.php(14): App\Models\UserModel->findUserByUsername('aaa')
+ 7 SYSTEMPATH\Validation\Validation.php(312): App\Validation\UserRules->validateUser('123', 'username, password', [...], null, 'password')
+ 8 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('password', 'password', '123', [...], [...])
+ 9 APPPATH\Controllers\BaseController.php(99): CodeIgniter\Validation\Validation->run([...])
+10 APPPATH\Controllers\api\Auth.php(71): App\Controllers\BaseController->validateRequest([...], [...], [...])
+11 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\api\Auth->login()
+12 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\Auth))
+13 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-25 00:25:59 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\ci\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\ci\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'custom_email', 3306, '', 0)
+#1 C:\xampp\htdocs\ci\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ci\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ci\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ci\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ci\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\ci\app\Models\UserModel.php(44): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\ci\app\Validation\UserRules.php(14): App\Models\UserModel->findUserByUsername('aaa')
+#8 C:\xampp\htdocs\ci\system\Validation\Validation.php(312): App\Validation\UserRules->validateUser('123', 'username, passw...', Array, NULL, 'password')
+#9 C:\xampp\htdocs\ci\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('password', 'password', '123', Array, Array)
+#10 C:\xampp\htdocs\ci\app\Controllers\BaseController.php(99): CodeIgniter\Validation\Validation->run(Array)
+#11 C:\xampp\htdocs\ci\app\Controllers\api\Auth.php(71): App\Controllers\BaseController->validateRequest(Array, Array, Array)
+#12 C:\xampp\htdocs\ci\system\CodeIgniter.php(934): App\Controllers\api\Auth->login()
+#13 C:\xampp\htdocs\ci\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\Auth))
+#14 C:\xampp\htdocs\ci\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 C:\xampp\htdocs\ci\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#16 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\ci\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\ci\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ci\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ci\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\ci\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\ci\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\ci\app\Models\UserModel.php(44): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\ci\app\Validation\UserRules.php(14): App\Models\UserModel->findUserByUsername('aaa')
+#7 C:\xampp\htdocs\ci\system\Validation\Validation.php(312): App\Validation\UserRules->validateUser('123', 'username, passw...', Array, NULL, 'password')
+#8 C:\xampp\htdocs\ci\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('password', 'password', '123', Array, Array)
+#9 C:\xampp\htdocs\ci\app\Controllers\BaseController.php(99): CodeIgniter\Validation\Validation->run(Array)
+#10 C:\xampp\htdocs\ci\app\Controllers\api\Auth.php(71): App\Controllers\BaseController->validateRequest(Array, Array, Array)
+#11 C:\xampp\htdocs\ci\system\CodeIgniter.php(934): App\Controllers\api\Auth->login()
+#12 C:\xampp\htdocs\ci\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\Auth))
+#13 C:\xampp\htdocs\ci\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 C:\xampp\htdocs\ci\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#15 {main}
+CRITICAL - 2023-03-25 00:25:59 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\UserModel.php(44): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Validation\UserRules.php(14): App\Models\UserModel->findUserByUsername('aaa')
+ 7 SYSTEMPATH\Validation\Validation.php(312): App\Validation\UserRules->validateUser('123', 'username, password', [...], null, 'password')
+ 8 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('password', 'password', '123', [...], [...])
+ 9 APPPATH\Controllers\BaseController.php(99): CodeIgniter\Validation\Validation->run([...])
+10 APPPATH\Controllers\api\Auth.php(71): App\Controllers\BaseController->validateRequest([...], [...], [...])
+11 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\api\Auth->login()
+12 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\Auth))
+13 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-25 00:26:13 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\ci\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\ci\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'custom_email', 3306, '', 0)
+#1 C:\xampp\htdocs\ci\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ci\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ci\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ci\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ci\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\ci\app\Models\UserModel.php(44): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\ci\app\Validation\UserRules.php(14): App\Models\UserModel->findUserByUsername('aaa')
+#8 C:\xampp\htdocs\ci\system\Validation\Validation.php(312): App\Validation\UserRules->validateUser('123', 'username, passw...', Array, NULL, 'password')
+#9 C:\xampp\htdocs\ci\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('password', 'password', '123', Array, Array)
+#10 C:\xampp\htdocs\ci\app\Controllers\BaseController.php(99): CodeIgniter\Validation\Validation->run(Array)
+#11 C:\xampp\htdocs\ci\app\Controllers\api\Auth.php(71): App\Controllers\BaseController->validateRequest(Array, Array, Array)
+#12 C:\xampp\htdocs\ci\system\CodeIgniter.php(934): App\Controllers\api\Auth->login()
+#13 C:\xampp\htdocs\ci\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\Auth))
+#14 C:\xampp\htdocs\ci\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 C:\xampp\htdocs\ci\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#16 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\ci\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\ci\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ci\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ci\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\ci\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\ci\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\ci\app\Models\UserModel.php(44): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\ci\app\Validation\UserRules.php(14): App\Models\UserModel->findUserByUsername('aaa')
+#7 C:\xampp\htdocs\ci\system\Validation\Validation.php(312): App\Validation\UserRules->validateUser('123', 'username, passw...', Array, NULL, 'password')
+#8 C:\xampp\htdocs\ci\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('password', 'password', '123', Array, Array)
+#9 C:\xampp\htdocs\ci\app\Controllers\BaseController.php(99): CodeIgniter\Validation\Validation->run(Array)
+#10 C:\xampp\htdocs\ci\app\Controllers\api\Auth.php(71): App\Controllers\BaseController->validateRequest(Array, Array, Array)
+#11 C:\xampp\htdocs\ci\system\CodeIgniter.php(934): App\Controllers\api\Auth->login()
+#12 C:\xampp\htdocs\ci\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\Auth))
+#13 C:\xampp\htdocs\ci\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 C:\xampp\htdocs\ci\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#15 {main}
+CRITICAL - 2023-03-25 00:26:13 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\UserModel.php(44): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Validation\UserRules.php(14): App\Models\UserModel->findUserByUsername('aaa')
+ 7 SYSTEMPATH\Validation\Validation.php(312): App\Validation\UserRules->validateUser('123', 'username, password', [...], null, 'password')
+ 8 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('password', 'password', '123', [...], [...])
+ 9 APPPATH\Controllers\BaseController.php(99): CodeIgniter\Validation\Validation->run([...])
+10 APPPATH\Controllers\api\Auth.php(71): App\Controllers\BaseController->validateRequest([...], [...], [...])
+11 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\api\Auth->login()
+12 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\Auth))
+13 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-25 00:26:17 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\ci\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\ci\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'custom_email', 3306, '', 0)
+#1 C:\xampp\htdocs\ci\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ci\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ci\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ci\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ci\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\ci\app\Models\UserModel.php(44): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\ci\app\Validation\UserRules.php(14): App\Models\UserModel->findUserByUsername('aaa')
+#8 C:\xampp\htdocs\ci\system\Validation\Validation.php(312): App\Validation\UserRules->validateUser('123', 'username, passw...', Array, NULL, 'password')
+#9 C:\xampp\htdocs\ci\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('password', 'password', '123', Array, Array)
+#10 C:\xampp\htdocs\ci\app\Controllers\BaseController.php(99): CodeIgniter\Validation\Validation->run(Array)
+#11 C:\xampp\htdocs\ci\app\Controllers\api\Auth.php(71): App\Controllers\BaseController->validateRequest(Array, Array, Array)
+#12 C:\xampp\htdocs\ci\system\CodeIgniter.php(934): App\Controllers\api\Auth->login()
+#13 C:\xampp\htdocs\ci\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\Auth))
+#14 C:\xampp\htdocs\ci\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 C:\xampp\htdocs\ci\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#16 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\ci\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\ci\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ci\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ci\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\ci\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\ci\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\ci\app\Models\UserModel.php(44): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\ci\app\Validation\UserRules.php(14): App\Models\UserModel->findUserByUsername('aaa')
+#7 C:\xampp\htdocs\ci\system\Validation\Validation.php(312): App\Validation\UserRules->validateUser('123', 'username, passw...', Array, NULL, 'password')
+#8 C:\xampp\htdocs\ci\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('password', 'password', '123', Array, Array)
+#9 C:\xampp\htdocs\ci\app\Controllers\BaseController.php(99): CodeIgniter\Validation\Validation->run(Array)
+#10 C:\xampp\htdocs\ci\app\Controllers\api\Auth.php(71): App\Controllers\BaseController->validateRequest(Array, Array, Array)
+#11 C:\xampp\htdocs\ci\system\CodeIgniter.php(934): App\Controllers\api\Auth->login()
+#12 C:\xampp\htdocs\ci\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\Auth))
+#13 C:\xampp\htdocs\ci\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 C:\xampp\htdocs\ci\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#15 {main}
+CRITICAL - 2023-03-25 00:26:17 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\UserModel.php(44): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Validation\UserRules.php(14): App\Models\UserModel->findUserByUsername('aaa')
+ 7 SYSTEMPATH\Validation\Validation.php(312): App\Validation\UserRules->validateUser('123', 'username, password', [...], null, 'password')
+ 8 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('password', 'password', '123', [...], [...])
+ 9 APPPATH\Controllers\BaseController.php(99): CodeIgniter\Validation\Validation->run([...])
+10 APPPATH\Controllers\api\Auth.php(71): App\Controllers\BaseController->validateRequest([...], [...], [...])
+11 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\api\Auth->login()
+12 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api\Auth))
+13 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
